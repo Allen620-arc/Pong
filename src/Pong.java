@@ -7,5 +7,7 @@ public class Pong {
 
     public static void main(String[] arg) {
 
+        GameFrame frame = new GameFrame();
+
     }
 }

@@ -21,7 +21,15 @@ public class GamePanel extends JPanel implements Runnable{
     Score score;
 
     GamePanel() {
+        newPaddles();
+        newBall();
+        score = new Score(GAME_WIDTH, GAME_HEIGHT);
+        this.setFocusable(true);
+        this.addKeyListener(new AL());
+        this.setPreferredSize(SCREEN_SIZE);
 
+        gameThread = new Thread(this);
+        gameThread.start();
     }
 
     public void newBall() {
@@ -52,7 +60,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     }
 
-    public class AL extends KeyAdapter {
+    public static class AL extends KeyAdapter {
         public void keyPressed(KeyEvent e) {
 
         }

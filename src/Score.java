@@ -14,6 +14,10 @@ public class Score extends Rectangle{
 
     }
 
+    public Score(int gameWidth, int gameHeight) {
+
+    }
+
     public void draw(Graphics g) {
 
     }

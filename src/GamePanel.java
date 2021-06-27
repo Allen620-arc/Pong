@@ -65,6 +65,7 @@ public class GamePanel extends JPanel implements Runnable{
         double amountOfTicks = 60;
         double ns = 1000000000 / amountOfTicks;
         double delta = 0;
+        //noinspection InfiniteLoopStatement
         while (true) {
             long now = System.nanoTime();
             delta += (now - lastTime) / ns;

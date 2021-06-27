@@ -1,9 +1,13 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.*;
+import java.util.*;
 import javax.swing.*;
 
-public class Ball {
+public class Ball extends Rectangle{
+
+    Random random;
+    int xVelocity;
+    int yVelocity;
 
     Ball() {
 
